@@ -18,7 +18,11 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
   restart.addEventListener("click", (event) => {
-    event.target.reset()
+    burgerProducts.forEach((item) => {
+      item.style.display = "none"
+      money -= money;
+      textMoney.textContent = `${money + Bread} $`
+    })
   })
   
   const Chease = +"2";
@@ -40,6 +44,7 @@ window.addEventListener("DOMContentLoaded", () => {
       `Bread ${Bread} $`,
     ],
   };
+  
   
   
   //  function MathList() {
@@ -118,8 +123,7 @@ btns[0].addEventListener("click", () => {
     item.addEventListener("click", () => {
       item.style.display = "none";
        
-    })
-    item.style.display = "none"
+    });
   })
   promoPrice.innerHTML = ``;
   
